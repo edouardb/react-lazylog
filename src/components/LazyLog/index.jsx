@@ -65,6 +65,7 @@ export default class LazyLog extends Component {
       onError: func,
       // a callback which formats the websocket data stream.
       formatMessage: func,
+      protocols: oneOfType([string, arrayOf(string)]),
     }),
     /**
      * Set to `true` to specify remote URL will be streaming chunked data.
